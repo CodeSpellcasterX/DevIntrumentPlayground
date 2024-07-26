@@ -1,0 +1,13 @@
+.decorated-text {
+    background: linear-gradient(45deg, #9b59b6, #ff6f61); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+}
+
+.header-container {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem 2rem;
+}
+
