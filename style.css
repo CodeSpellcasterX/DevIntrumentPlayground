@@ -11,3 +11,18 @@
     padding: 1rem 2rem;
 }
 
+.keyboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background-image: url(./src/images/Background.jpg);
+    background-size:contain;
+  }
+  
+  .wrapper {
+    padding: 35px 40px;
+    border-radius: 20px;
+    background: #141414;
+  }
