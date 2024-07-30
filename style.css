@@ -1,3 +1,12 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .decorated-text {
     background: linear-gradient(45deg, #9b59b6, #ff6f61); 
     -webkit-background-clip: text; 
@@ -162,4 +171,54 @@
     .piano-keys .white {
       width: 50px;
     }
+  }
+
+  #drop-area {
+    bottom: 1rem;
+    width: 80vw;
+    height: 100px;
+    margin-top: 20px;
+    border: 5px dashed #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+
+  #cards-container {
+    width: 100%;
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .card {
+    margin: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+    word-break: break-all;
+    margin-top: 5px;
+    text-align: center;
   }
