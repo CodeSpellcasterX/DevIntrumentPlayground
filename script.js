@@ -234,6 +234,7 @@ document.addEventListener('DOMContentLoaded', function(){
             addMessageToChat('Bot', data.choices[0]?.message.content)
         } catch (error) {
             console.error('Error fetching HTML/CSS content:', error);
+            addMessageToChat('Bot', "Free Trial assitance is over ☹️")
         }
         
       }
