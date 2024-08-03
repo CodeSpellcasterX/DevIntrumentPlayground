@@ -339,8 +339,9 @@
 
   #start-timer-btn {
     font-weight: bold;
-    position: relative;
-    left: 97rem;
+    position: sticky;
+    margin-right: 2rem;
+    left: 90%;
     background: linear-gradient(45deg, #9b59b6, #ff6f61);
     color: white;
     padding: 5px 10px;
