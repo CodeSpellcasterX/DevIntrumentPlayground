@@ -327,3 +327,35 @@
     visibility: hidden;
   }
   
+
+  #timer-container {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+
+  #start-timer-btn {
+    font-weight: bold;
+    position: relative;
+    left: 97rem;
+    background: linear-gradient(45deg, #9b59b6, #ff6f61);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #start-timer-btn:hover {
+    background: linear-gradient(45deg, #9b59b6, #ff6f61);
+  }
+  
+  #start-timer-btn:active {
+    transform: scale(0.98);
+  }

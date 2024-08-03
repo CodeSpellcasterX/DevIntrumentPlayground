@@ -256,3 +256,44 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
 });
+
+function startTimer(duration) {
+    let timer = duration, minutes, seconds;
+    const timerElement = document.getElementById('timer');
+    const timerButtonElement = document.getElementById('start-timer-btn');
+    timerButtonElement.style.visibility = 'hidden'
+    timerElement.style.visibility = 'visible';
+    
+    // Check if the browser supports notifications
+    if ('Notification' in window && Notification.permission !== 'granted') {
+      Notification.requestPermission();
+    }
+  
+    const interval = setInterval(() => {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+  
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+  
+      timerElement.textContent = minutes + ':' + seconds;
+  
+      if (--timer < 0) {
+        timerElement.style.visibility = 'hidden'
+        timerButtonElement.style.visibility = 'visible'
+        timerButtonElement.style.top = '0rem'
+        clearInterval(interval);
+        sendNotification();
+      }
+    }, 1000);
+  }
+  
+  // Function to send a web notification
+  function sendNotification() {
+    if ('Notification' in window && Notification.permission === 'granted') {
+      new Notification('Timer Finished', {
+        body: 'Your timer has ended.',
+        icon: './src/images/Background.jpg' // Optional: Add your own icon URL
+      });
+    }
+  }
