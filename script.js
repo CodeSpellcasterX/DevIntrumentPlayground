@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 3573fcef4e334ae4ad1571079be46b70'
+                    'Authorization': 'Bearer 435924130e7e495a954d8f3d3857ed71'
                 },
                 body: JSON.stringify({
                     model: "gpt-3.5-turbo",
